@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sum of two numbers</title>
+
+    
+    
+</head>
+<body>
+    Enter two number:<input type="number" placeholder="enter int"> + <input type="number" placeholder="enter float"> = <button type="button" onclick="sum()">Calculate</button>
+    <script>
+    var input1=document.getElementsByTagName('input')[0];
+    var input2=document.getElementsByTagName('input')[1];
+
+    var button=document.getElementsByTagName('button')[0];
+    function sum()
+    {
+        var m=button.innerHTML=parseInt(input1.value)+parseFloat(input2.value);
+        console.log(m)
+    }
+    </script>  
+</body>
+</html>

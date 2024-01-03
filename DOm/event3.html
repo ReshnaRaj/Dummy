@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Interest</title> 
+</head>
+<body>
+    enter Principle amount<input type="number"><br><br>
+    enter rate of interest<input type="number"><br><br>
+    enter number of years<input type="number"><br><br>
+    <button type="button" onclick="si()">Calculate</button>
+    
+
+    <script>
+        let input1=document.getElementsByTagName('input')[0];
+        let input2=document.getElementsByTagName('input')[1];
+        let input3=document.getElementsByTagName('input')[2];
+        let bu=document.getElementsByTagName('button')[0];
+      
+      
+        function si()
+        {
+            var simple=(parseInt(input1.value)*parseFloat(input2.value)*parseFloat(input3.value)/100)
+           
+            document.getElementsByTagName('button')[0].innerHTML=simple
+            console.log(simple)
+        }
+        
+    </script> 
+</body>
+</html>

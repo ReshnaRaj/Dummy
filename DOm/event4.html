@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grading system</title>
+
+
+</head>
+
+<body>
+    Enter your mark: <input type="number">
+    <button type="button" onclick="grade()">Click to here for Grade</button>
+    <script>
+       let input=document.getElementsByTagName('input')[0];
+        document.getElementsByTagName('button')[0];
+        function grade() {
+            if (input.value >= 50) {
+                
+                document.getElementsByTagName('button')[0].innerHTML='you are passed';
+                console.log("you are passed")
+            }
+            else {
+                document.getElementsByTagName('button')[0].innerHTML='you are failed';
+                console.log("you are failed")
+            }
+        }
+    </script>
+</body>
+
+</html>

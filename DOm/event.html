@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Events</title>
+
+   
+</head>
+<body>
+    Enter your name:<input type="text" onchange='test()'><br><br>
+    your name is :<span></span>
+    <script>
+        
+    var input=document.getElementsByTagName('input')[0];
+    var span1=document.getElementsByTagName('span')[0];
+function test()
+{
+    span1.innerHTML=input.value;
+    console.log("name is "+input.value)
+}
+    </script> 
+</body>
+</html>
